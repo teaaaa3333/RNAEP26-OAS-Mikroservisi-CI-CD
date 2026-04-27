@@ -20,4 +20,4 @@ def test_format_product_logic():
         assert rezultat['price']==150.0
         assert rezultat['quantity']==200
 
-        mocked_get.assert_called_once_with('test_id_123')
+        mocked_get.assert_called_once_with('test-id-123')
