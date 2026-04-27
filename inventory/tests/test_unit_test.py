@@ -5,7 +5,7 @@ from main import format_product
 def test_format_product_logic():
     mock_product =MagicMock()
     mock_product.pk="test-id-123"
-    mock_product.name="PLazma keks"
+    mock_product.name="Plazma keks"
     mock_product.price=150.0
     mock_product.quantity=200
 
