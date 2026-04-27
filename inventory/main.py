@@ -34,6 +34,10 @@ def format_product(pk: str):
         'quantity': product.quantity
     }
 
+@app.get("/")
+async def root ():
+    return {"status":"ok"}
+
 @app.get('/products', response_model=List[dict])
 async def all_products():
     """Vraća listu svih primarnih ključeva i formatira ih"""
